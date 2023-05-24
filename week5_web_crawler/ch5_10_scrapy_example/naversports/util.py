@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 
-def get_dates_between(start_datetime: datetime, end_datetime):
+def get_dates_between(start_datetime, end_datetime):
     datestr_list = []
     current_datetime = start_datetime
 

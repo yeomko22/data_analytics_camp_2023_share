@@ -20,7 +20,7 @@ class BaseballSpider(scrapy.Spider):
         self.article_url = "https://sports.news.naver.com/news?oid={oid}&aid={aid}"
         self.output_file = open("./baseball.csv", "w")
         self.writer = csv.writer(self.output_file)
-        self.writer.writerow(["date", "title", "content"])
+        self.writer.writerow(["url", "datetime", "title", "content"])
 
     def parse(self, response):
         for target_date in self.target_dates:
@@ -58,6 +58,7 @@ class BaseballSpider(scrapy.Spider):
             yield req
 
     def parse_article(self, response):
+        url = response.request.url
         date = response.meta["date"]
 
         def _remove_tags(parent_soup, target_tag):
@@ -73,4 +74,4 @@ class BaseballSpider(scrapy.Spider):
         _remove_tags(content_soup, "em")
         _remove_tags(content_soup, "span")
         content = content_soup.get_text().strip()
-        self.writer.writerow([date, title, content])
+        self.writer.writerow([url, date, title, content])
