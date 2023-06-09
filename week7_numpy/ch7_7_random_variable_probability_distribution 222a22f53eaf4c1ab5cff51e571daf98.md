@@ -1,4 +1,4 @@
-# ch7_6_random_variable_probability_distribution
+# ch7_7_random_variable_probability_distribution
 
 ## 확률 변수와 확률 분포
 
@@ -14,7 +14,7 @@ ex) 동전 두개를 던져서 나온 앞면의 개수, 0, 1, 2
 
 ex) 앞면이 0개일 확률: 1/4, 앞면이 1개 나올 확률 2/4, 앞면이 2개 나올 확률 1/4
 
-![Untitled](ch7_6_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled.png)
+![Untitled](ch7_7_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled.png)
 
 이산형 확률 변수(Discrete Random Variable): 확률 변수 X의 집합이 셀 수 있으면 이산 확률 변수
 
@@ -51,11 +51,11 @@ ex) 남학생들의 키
 
 그러면 특정 계급에 속하는 학생 수는 계급의 크기 * (상대 도수 / 계급의 크기)로 나타낼 수 있습니다. 이 성질을 이용해서 히스토그램을 그려보겠습니다.
 
-![Untitled](ch7_6_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%201.png)
+![Untitled](ch7_7_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%201.png)
 
 이 때, 확률 변수 구간을 점점 더 잘게 잘게 쪼개면 우리가 잘 알고 있는 종모양의 분포에 가까워집니다.
 
-![Untitled](ch7_6_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%202.png)
+![Untitled](ch7_7_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%202.png)
 
 이제 각 히스토그램의 중간점들을 이어주면 곡선이 나옵니다. 이를 확률 밀도 함수의 그래프라고 부르고, 영어로는 pdf(probaility density function)이라고 부른다. 
 
@@ -75,7 +75,7 @@ $$
 
 식 자체는 무시무시하지만, 이를 암기할 필요는 전혀 없습니다. 기억해야할 것은 정규 분포의 형태는 평균과 표준편차, 두 가지 변수에 의해서 결정된다는 점만 기억하면 됩니다.
 
-![Untitled](ch7_6_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%203.png)
+![Untitled](ch7_7_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%203.png)
 
 정규분포는 평균값을 중심으로 좌우 대칭의 형태를 갖게 됩니다. 그리고 표준 편차가 클 수록 퍼지게 되고, 작을 수록 뾰족해집니다.
 
@@ -89,10 +89,10 @@ $$
 
 평균이 0이고 표준편차가 1인 정규분포를 말합니다. 아래 그래프에서 빨간색으로 표시된 분포가 표준 정규 분포입니다. 표준 정규분포가 왜 중요하나면, 표준 정규 분포에 대해서 미리 구간별 확률값을 계산했기 때문입니다.
 
-![Untitled](ch7_6_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%203.png)
+![Untitled](ch7_7_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%203.png)
 
 연속 확률 변수의 확률 분포에서 확률값은 특정 구간의 면적이라고 했습니다. 그런데 엄청나게 복잡하게 생긴 정규 분포 식을 구간별로 적분하는 것은 보통 일이 아닙니다. 모든 평균과 표준 편차에 대해서 이 계산을 일일이 할 수 없기 때문에, 표준 정규 분포에 대해서 미리 구간별 적분을 해놓고, 이를 이용해서 다양한 분포들에 대해 확률을 계산하는 것입니다.
 
 정규분포 확률 계산: [https://homepage.divms.uiowa.edu/~mbognar/applets/normal.html](https://homepage.divms.uiowa.edu/~mbognar/applets/normal.html)
 
-![Untitled](ch7_6_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%204.png)
+![Untitled](ch7_7_random_variable_probability_distribution%20222a22f53eaf4c1ab5cff51e571daf98/Untitled%204.png)
