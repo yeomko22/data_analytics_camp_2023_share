@@ -1,4 +1,4 @@
-# 7_5_statistics_basics
+# 7_6_statistics_basics
 
 ## 통계학을 배우는 이유
 
