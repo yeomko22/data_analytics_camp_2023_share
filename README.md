@@ -59,4 +59,36 @@
 | 8-6 | preprocess part 2 - scale values | 8-13 | boosing tree - lightGBM |
 | 8-7 | preprocess functionalize |  |  |
 
+### week 9. data visualization
+| 챕터 | 내용 |
+| --- | --- |
+| 9-1 | matplotlib bar, line chart |
+| 9-2 | matplotlib histogram, scatter plot, box plot |
+| 9-3 | seaborn |
+| 9-4 | folium |
+
+### week 10. statistics
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 10-1 | statistical hypothesis testing | 10-5 | one-sample t-test |
+| 10-2 | central limit theorem | 10-6 | two-sample t-test |
+| 10-3 | one sided z-test | 10-7 | paired-sample t-test |
+| 10-4 | two-sided z-test | 10-8 | probability basics |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
