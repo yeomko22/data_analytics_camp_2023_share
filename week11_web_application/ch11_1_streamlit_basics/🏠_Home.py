@@ -1,8 +1,8 @@
-import pandas as pd
-from matplotlib import pyplot as plt
-import streamlit as st
 import numpy as np
+import pandas as pd
 import seaborn as sns
+import streamlit as st
+from matplotlib import pyplot as plt
 
 st.title("Uber pickups in NYC1")
 st.text("Uber pickup in NYC data analytics project.")
