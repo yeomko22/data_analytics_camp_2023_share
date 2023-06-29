@@ -70,12 +70,20 @@
 ### week 10. statistics
 | 챕터 | 내용 | 챕터 | 내용 |
 | --- | --- | --- | --- |
-| 10-1 | statistical hypothesis testing | 10-5 | one-sample t-test |
-| 10-2 | central limit theorem | 10-6 | two-sample t-test |
-| 10-3 | one sided z-test | 10-7 | paired-sample t-test |
-| 10-4 | two-sided z-test | 10-8 | probability basics |
+| 10-1 | statistical hypothesis testing | 10-7 | paired-sample t-test |
+| 10-2 | central limit theorem | 10-8 | probability basics |
+| 10-3 | one sided z-test | 10-9 | expected frequency |
+| 10-4 | two-sided z-test | 10-10 | chi square test |
+| 10-5 | one-sample t-test | 10-11 | one way ANOVA |
+| 10-6 | two-sample t-test | 10-12 | two way ANOVA |
 
-
+### week 11. web application
+| 챕터 | 내용 |
+| --- | --- |
+| 11-1 | streamlit basics |
+| 11-2 | streamlit model serving |
+| 11-3 | streamlit chatGPT |
+| 11-4 | streamlit database connect |
 
 
 
