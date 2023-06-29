@@ -10,6 +10,9 @@ def init_connection():
     key = st.secrets["SUPABASE_KEY"]
     return create_client(url, key)
 
+
+supabase_client = init_connection()
+
 st.markdown(
     """
 <style>
@@ -21,7 +24,6 @@ footer {
     unsafe_allow_html=True,
 )
 
-supabase = init_connection()
 
 openai.api_key = st.secrets.OPENAI_TOKEN
 openai_model_version = "gpt-3.5-turbo-0613"
@@ -58,10 +60,13 @@ def request_chat_completion(prompt):
 
 
 def write_prompt_result(prompt, result):
-    data = supabase.table("prompt_results")\
-        .insert({"prompt": prompt, "result": result})\
-        .execute()
-    print(data)
+    response = supabase_client.table("prompt_results").insert(
+        {
+            "prompt": prompt,
+            "result": result
+        }
+    ).execute()
+    print(response)
 
 
 with st.form("form"):
