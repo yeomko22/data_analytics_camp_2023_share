@@ -34,7 +34,7 @@ def is_prime(n):
 
 if __name__ == '__main__':
     start = time.time()
-    with ProcessPoolExecutor(max_workers=10) as executor:
+    with ProcessPoolExecutor(max_workers=4) as executor:
         results = executor.map(is_prime, NUMS)
         for num, result in zip(NUMS, results):
             print(f"{num} is prime: {result}")
