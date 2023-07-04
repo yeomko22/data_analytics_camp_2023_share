@@ -1,1 +1,2 @@
 *.csv
+!baseball_players.csv
