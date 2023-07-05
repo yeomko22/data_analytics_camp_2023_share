@@ -1,2 +1,4 @@
 *.csv
+*.model
+*.tsv
 !baseball_players.csv
