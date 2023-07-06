@@ -76,6 +76,7 @@
 | 10-4 | two-sided z-test | 10-10 | chi square test |
 | 10-5 | one-sample t-test | 10-11 | one way ANOVA |
 | 10-6 | two-sample t-test | 10-12 | two way ANOVA |
+|  |  | 10-13 | bayes theorem |
 
 ### week 11. web application
 | 챕터 | 내용 |
@@ -85,9 +86,15 @@
 | 11-3 | streamlit chatGPT |
 | 11-4 | streamlit database connect |
 
+### week 12. nlp basics
 
-
-
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 12-1 | tokenize | 12-6 | tf-idf vectorizor |
+| 12-2 | python multi process | 12-7 | naive bayes |
+| 12-3 | parallel tokenize | 12-8 | naive bayes classifier |
+| 12-4 | word cloud | 12-9 | word2vec |
+| 12-5 | tf-idf | 12-10 | dimension reduction |
 
 
 
