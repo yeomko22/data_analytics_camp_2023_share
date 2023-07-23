@@ -97,7 +97,14 @@
 | 12-5 | tf-idf | 12-10 | dimension reduction |
 
 
+### week 14. clustering
 
+| 챕터 | 내용 |
+| --- | --- |
+| 14-1 | K-Means clustering |
+| 14-2 | DBSCAN |
+| 14-3 | comparing clustering algorithms |
+| 14-4 | hierarchical clustering |
 
 
 
