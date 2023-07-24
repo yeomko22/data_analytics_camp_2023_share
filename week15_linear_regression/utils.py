@@ -14,3 +14,10 @@ def load_diamonds_dataset():
     X = df.drop(["price"], axis=1)
     y = df["price"]
     return train_test_split(X, y, train_size=0.8, random_state=1234) 
+
+
+def load_titanic_dataset():
+    df = pd.read_csv("./data/titanic.csv")
+    X = df.drop(["Survived"], axis=1)
+    y = df["Survived"]
+    return train_test_split(X, y, train_size=0.8, random_state=1234) 
