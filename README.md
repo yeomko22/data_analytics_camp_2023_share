@@ -87,7 +87,6 @@
 | 11-4 | streamlit database connect |
 
 ### week 12. nlp basics
-
 | 챕터 | 내용 | 챕터 | 내용 |
 | --- | --- | --- | --- |
 | 12-1 | tokenize | 12-6 | tf-idf vectorizor |
@@ -98,7 +97,6 @@
 
 
 ### week 14. clustering
-
 | 챕터 | 내용 |
 | --- | --- |
 | 14-1 | K-Means clustering |
@@ -106,11 +104,11 @@
 | 14-3 | comparing clustering algorithms |
 | 14-4 | hierarchical clustering |
 
-
-
-
-
-
-
-
-
+### week 15. linear regression
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 15-1 | simple linear regression | 15-6 | multiple linear regression |
+| 15-2 | r square | 15-7 | ridge, lasso regression |
+| 15-3 | coefficient t-test | 15-8 | logistic regression |
+| 15-4 | coefficient f-test | 15-9 | confusion matrix, ROC curve |
+| 15-5 | error diagnotics |  |  |
