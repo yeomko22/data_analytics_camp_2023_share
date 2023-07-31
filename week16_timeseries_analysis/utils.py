@@ -26,7 +26,15 @@ def load_sunspots():
 
 def load_restaurant():
     df = pd.read_csv("./data/restaurant.csv", index_col="date", parse_dates=True)
-    threshold = pd.Timestamp("2016-12-31")
+    threshold = pd.Timestamp("2016-11-30")
+    train_df = df[:threshold]
+    test_df = df[threshold:]
+    return train_df, test_df
+
+
+def load_tsla_stock():
+    df = pd.read_csv("./data/TSLA.csv", index_col="Date", parse_dates=True)
+    threshold = pd.Timestamp("2022-12-31")
     train_df = df[:threshold]
     test_df = df[threshold:]
     return train_df, test_df
