@@ -10,6 +10,7 @@ def calculate_rmse(df, label_column, target_column):
 
 def load_air_passengers():
     df = pd.read_csv("./data/AirPassengers.csv", index_col="Month", parse_dates=True)
+    df.index.freq = "MS"
     threshold = pd.Timestamp("1957-12-31")
     train_df = df[:threshold]
     test_df = df[threshold:]
@@ -18,6 +19,7 @@ def load_air_passengers():
 
 def load_sunspots():
     df = pd.read_csv("./data/Sunspots.csv", index_col="Date", parse_dates=True)
+    df.index.freq = "M"
     threshold = pd.Timestamp("1965-01-01")
     train_df = df[:threshold]
     test_df = df[threshold:]
@@ -26,6 +28,7 @@ def load_sunspots():
 
 def load_restaurant():
     df = pd.read_csv("./data/restaurant.csv", index_col="date", parse_dates=True)
+    df.index.freq = "D"
     threshold = pd.Timestamp("2016-11-30")
     train_df = df[:threshold]
     test_df = df[threshold:]
@@ -34,7 +37,16 @@ def load_restaurant():
 
 def load_tsla_stock():
     df = pd.read_csv("./data/TSLA.csv", index_col="Date", parse_dates=True)
+    df.index.freq = "D"
     threshold = pd.Timestamp("2022-12-31")
+    train_df = df[:threshold]
+    test_df = df[threshold:]
+    return train_df, test_df
+
+
+def load_delhi_climate():
+    df = pd.read_csv("./data/DelhiClimate.csv", index_col="date", parse_dates=True)
+    threshold = pd.Timestamp("2016-01-01")
     train_df = df[:threshold]
     test_df = df[threshold:]
     return train_df, test_df
