@@ -1,5 +1,27 @@
 import pandas as pd
 from sklearn.metrics import mean_squared_error
+from matplotlib import pyplot as plt
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+from statsmodels.tsa.stattools import adfuller, kpss
+
+
+def plot_acf_pacf(df, target_column):
+    target_series = df[target_column].dropna()
+    fig = plt.figure(figsize=(10, 3))
+    ax1 = fig.add_subplot(1, 2, 1)
+    ax2 = fig.add_subplot(1, 2, 2)
+    plot_acf(df[target_column].dropna(), ax=ax1);
+    plot_pacf(df[target_column].dropna(), ax=ax2);
+    
+
+def stationary_test(df, target_column):
+    target_series = df[target_column].dropna()
+    adf_result = adfuller(target_series)
+    adf_p_value = adf_result[1]
+    kpss_result = kpss(target_series)
+    kpss_p_value = kpss_result[1]
+    print(f"{target_column} ADF p-value: {round(adf_p_value, 4)} stationary: {adf_p_value < 0.05}")
+    print(f"{target_column} KPSS p-value: {round(kpss_p_value, 4)} stationary: {kpss_p_value > 0.05}")
 
 
 def calculate_rmse(df, label_column, target_column):
@@ -37,7 +59,6 @@ def load_restaurant():
 
 def load_tsla_stock():
     df = pd.read_csv("./data/TSLA.csv", index_col="Date", parse_dates=True)
-    df.index.freq = "D"
     threshold = pd.Timestamp("2022-12-31")
     train_df = df[:threshold]
     test_df = df[threshold:]
