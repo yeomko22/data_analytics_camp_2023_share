@@ -22,6 +22,7 @@ def plot_acf_pacf(df, target_column, lags=30):
     plot_acf(df[target_column].dropna(), ax=ax1, lags=lags);
     plot_pacf(df[target_column].dropna(), ax=ax2, lags=lags);
     
+    
 def stationary_test(df, target_column):
     target_series = df[target_column].dropna()
     adf_result = adfuller(target_series)
@@ -68,14 +69,6 @@ def load_restaurant():
 def load_tsla_stock():
     df = pd.read_csv("./data/TSLA.csv", index_col="Date", parse_dates=True)
     threshold = pd.Timestamp("2022-12-31")
-    train_df = df[:threshold]
-    test_df = df[threshold:]
-    return train_df, test_df
-
-
-def load_delhi_climate():
-    df = pd.read_csv("./data/DelhiClimate.csv", index_col="date", parse_dates=True)
-    threshold = pd.Timestamp("2016-01-01")
     train_df = df[:threshold]
     test_df = df[threshold:]
     return train_df, test_df
