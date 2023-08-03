@@ -5,15 +5,23 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.stattools import adfuller, kpss
 
 
-def plot_acf_pacf(df, target_column):
-    target_series = df[target_column].dropna()
-    fig = plt.figure(figsize=(10, 3))
-    ax1 = fig.add_subplot(1, 2, 1)
-    ax2 = fig.add_subplot(1, 2, 2)
-    plot_acf(df[target_column].dropna(), ax=ax1);
-    plot_pacf(df[target_column].dropna(), ax=ax2);
+def plot_multiple_timeseries(df, target_columns):
+    fig = plt.figure(figsize=(10, len(target_columns) * 1.5))
+    plt.subplots_adjust(hspace=1)
+    for i, target_column in enumerate(target_columns):
+        ax = fig.add_subplot(len(target_columns), 1, (i+1))
+        df[target_column].plot(ax=ax, title=target_column)
+        ax.set_xlabel('')
     
 
+def plot_acf_pacf(df, target_column, lags=30):
+    target_series = df[target_column].dropna()
+    fig = plt.figure(figsize=(10, 4))
+    ax1 = fig.add_subplot(1, 2, 1)
+    ax2 = fig.add_subplot(1, 2, 2)
+    plot_acf(df[target_column].dropna(), ax=ax1, lags=lags);
+    plot_pacf(df[target_column].dropna(), ax=ax2, lags=lags);
+    
 def stationary_test(df, target_column):
     target_series = df[target_column].dropna()
     adf_result = adfuller(target_series)
@@ -68,6 +76,15 @@ def load_tsla_stock():
 def load_delhi_climate():
     df = pd.read_csv("./data/DelhiClimate.csv", index_col="date", parse_dates=True)
     threshold = pd.Timestamp("2016-01-01")
+    train_df = df[:threshold]
+    test_df = df[threshold:]
+    return train_df, test_df
+
+
+def load_power():
+    df = pd.read_csv("./data/power.csv", index_col="Date", parse_dates=True)
+    df.index.freq = "D"
+    threshold = pd.Timestamp("2019-07-01")
     train_df = df[:threshold]
     test_df = df[threshold:]
     return train_df, test_df
