@@ -112,3 +112,14 @@
 | 15-3 | coefficient t-test | 15-8 | logistic regression |
 | 15-4 | coefficient f-test | 15-9 | confusion matrix, ROC curve |
 | 15-5 | error diagnotics |  |  |
+
+
+### week 16. timeseries analysis
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 16-1 | timeseries basics | 16-7 | SARIMA |
+| 16-2 | stationarity | 16-8 | SARIMAX |
+| 16-3 | ACF, PACF | 16-9 | Granger Causality Test |
+| 16-4 | moving average | 16-10 | VAR |
+| 16-5 | ARIMA basics | 16-11 | Prophet |
+| 16-6 | ARIMA parameters |  |  |
