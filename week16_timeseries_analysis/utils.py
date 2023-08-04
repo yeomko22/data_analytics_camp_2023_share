@@ -81,3 +81,10 @@ def load_power():
     train_df = df[:threshold]
     test_df = df[threshold:]
     return train_df, test_df
+
+def load_london_bike():
+    df = pd.read_csv("./data/london_bike.csv", index_col="timestamp", parse_dates=True)
+    threshold = pd.Timestamp("2016-09-30")
+    train_df = df[:threshold]
+    test_df = df[threshold:]
+    return train_df, test_df
