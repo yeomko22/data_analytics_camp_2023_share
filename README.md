@@ -123,3 +123,13 @@
 | 16-4 | moving average | 16-10 | VAR |
 | 16-5 | ARIMA basics | 16-11 | Prophet |
 | 16-6 | ARIMA parameters |  |  |
+
+### week 17. Deeplearning
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| ch17-1 | ML basics | ch17-7 | partial derivative & chain rule |
+| ch17-2 | linear regression | ch17-8 | back propagation |
+| ch17-3 | multiple linear regression | ch17-9 | simple dnn |
+| ch17-4 | logistic regression | ch17-10 | torch dataset, dataloader |
+| ch17-5 | multiclass classification | ch17-11 | deep neural network |
+| ch17-6 | history of deep learning | ch17-12 | vanishing gradient & ReLU |
