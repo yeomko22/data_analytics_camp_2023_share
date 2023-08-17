@@ -133,3 +133,12 @@
 | ch17-4 | logistic regression | ch17-10 | torch dataset, dataloader |
 | ch17-5 | multiclass classification | ch17-11 | deep neural network |
 | ch17-6 | history of deep learning | ch17-12 | vanishing gradient & ReLU |
+
+### week 18. Deeplearning Computer Vision
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 18-1 | Convolutional Neural Network | 18-6 | image search - fine tuning |
+| 18-2 | CNN Classifier | 18-7 | image search - vector indexing |
+| 18-3 | CNN architectures | 18-8 | image search - similarity search |
+| 18-4 | pretrained model | 18-9 | image search - web demo |
+| 18-5 | fine-tuning | 18-10 | computer vision tasks |
