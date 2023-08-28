@@ -142,3 +142,12 @@
 | 18-3 | CNN architectures | 18-8 | image search - similarity search |
 | 18-4 | pretrained model | 18-9 | image search - web demo |
 | 18-5 | fine-tuning | 18-10 | computer vision tasks |
+
+### week 19. Deeplearning NLP
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 19-1 | subword tokenization | 19-6 | seq2seq |
+| 19-2 | huggingface tokenizer | 19-7 | bleu score |
+| 19-3 | text classification | 19-8 | Attention Mechanism |
+| 19-4 | vanila RNN | 19-9 | Transformer |
+| 19-5 | LSTM, GRU |  |  |
