@@ -1,6 +1,3 @@
-from datetime import datetime, timezone
-from typing import List, Generator
-
 import openai
 import pinecone
 import streamlit as st
@@ -132,7 +129,7 @@ def process_recommend_results(items):
                 st.write(item["summary"])
 
 
-def process_generated_text(streaming_resp: Generator[OpenAIObject, None, None]) -> str:
+def process_generated_text(streaming_resp):
     st.markdown("**웜즈의 추천사 ✍️**")
     report = []
     res_box = st.empty()
