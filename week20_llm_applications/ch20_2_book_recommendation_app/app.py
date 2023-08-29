@@ -3,7 +3,6 @@ import pinecone
 import streamlit as st
 from google.cloud import translate
 from google.oauth2.service_account import Credentials
-from openai.openai_object import OpenAIObject
 
 st.set_page_config(
     page_title="worms book",
@@ -66,7 +65,7 @@ def recommend(query_embedding):
     return [x["metadata"] for x in matches]
 
 
-def generate_prompt(query):
+def generate_prompt(query, items):
     prompt = f"""
 유저가 읽고 싶은 책에 대한 묘사와 이에 대한 추천 결과가 주어집니다.
 유저의 입력과 각 추천 결과 책의 제목, 저자, 소개 등을 참고하여 추천사를 작성하세요.
