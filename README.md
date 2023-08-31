@@ -151,3 +151,12 @@
 | 19-3 | text classification | 19-8 | Attention Mechanism |
 | 19-4 | vanila RNN | 19-9 | Transformer |
 | 19-5 | LSTM, GRU |  |  |
+
+### week 20. LLM applications
+| 챕터 | 내용 | 챕터 | 내용 |
+| --- | --- | --- | --- |
+| 20-1 | openai embedding api | 20-4 | langchain memory |
+| 20-2 | book recommendation system | 20-5 | streamlit langchain |
+| 20-3 | streamlit chatting UI | 20-6 | chatGPT function calling |
+
+
